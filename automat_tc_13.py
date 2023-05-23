@@ -1,4 +1,11 @@
 from selenium import webdriver
+import chromedriver_autoinstaller
+chromedriver_autoinstaller.install()
+#Chrome options
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument("--disable-infobars")
+chrome_options.add_argument('--disable-dev-shm-usage')
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
