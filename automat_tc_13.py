@@ -12,7 +12,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 import time
 # Inicjalizacja przeglądarki
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(options=chrome_options)
 time.sleep(3)
 
 # 1.Przejdź do strony z aplikacją "To Do List"
